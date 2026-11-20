@@ -7,6 +7,7 @@ Colección personal de Agent Skills de [Mr-Rick0](https://github.com/Mr-Rick0), 
 | Skill | Objetivo | Instrucciones |
 | --- | --- | --- |
 | `eco-code` | Auditar el repositorio y reutilizar soluciones antes de introducir lógica nueva. | [SKILL.md](skills/eco-code/SKILL.md) |
+| `mr-explainer` | Explicar código, arquitectura, dependencias y cambios a partir de evidencia del proyecto. | [SKILL.md](skills/mr-explainer/SKILL.md) |
 
 ## Instalar en distintos harnesses
 
@@ -14,6 +15,7 @@ Con Node.js 22.20 o posterior, ejecuta:
 
 ```sh
 npx skills add Mr-Rick0/AI-skills --skill eco-code -g
+npx skills add Mr-Rick0/AI-skills --skill mr-explainer -g
 ```
 
 El instalador permite seleccionar los agentes de destino. `-g` instala para el usuario, disponible entre proyectos; omítelo para instalar solo en el proyecto actual.
@@ -50,7 +52,9 @@ Si instalaste manualmente o con otro instalador, actualiza mediante ese mismo me
 AI-skills/
 ├── README.md
 └── skills/
-    └── eco-code/
+    ├── eco-code/
+    │   └── SKILL.md
+    └── mr-explainer/
         └── SKILL.md
 ```
 
@@ -66,4 +70,4 @@ Sube `README.md` y la carpeta `skills/` a la raíz de la rama `main`. Si descarg
 
 Este repositorio es un catálogo instalable desde GitHub; no registra automáticamente un marketplace de plugins en los distintos harnesses.
 
-`eco-code` conserva el contenido original de su autor, con escapes y Markdown normalizados. La validación del paquete comprueba estructura e integridad, no el comportamiento de cada modelo.
+Las skills conservan el contenido original de su autor, con escapes y Markdown normalizados. La validación del paquete comprueba estructura e integridad, no el comportamiento de cada modelo.
